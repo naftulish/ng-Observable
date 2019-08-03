@@ -1,0 +1,29 @@
+
+
+.dashBoard{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 10% 90%;
+    height: 100%;
+    background: #fff;
+}
+
+.header{
+    padding: 0 20px;
+    grid-column:1 / 3;
+    grid-row: 1;
+    background: black;
+    color: white;
+}
+
+.dashBoardMenu{
+    padding: 20px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.dashBoardArea{
+    grid-column: 2;
+    grid-row: 2;
+    padding: 20px;
+}

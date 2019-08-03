@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Blinker&display=swap');
+
+*{
+    font-family: 'Blinker', sans-serif;
+
+}
+
+body, html{
+    height: 100%;
+    padding: 0;
+    margin: 0
+}
+
+.p-t-15{
+    padding-top: 15px !important
+}
+
+button.btn{
+    margin-top: 10px;
+    margin-right: 15px ;
+}

@@ -1,0 +1,30 @@
+
+<mat-card class="example-card">
+
+<mat-card-title class='p-t-15'>car list</mat-card-title>
+<mat-card-subtitle>list of all the cars</mat-card-subtitle>
+
+<table>
+    <thead>
+        <tr>
+            <th> ID </th>
+            <th> Model </th>
+            <th> Color </th>
+            <th> Year </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of data.carsToshow">
+            <td>{{item.ID}}</td>
+            <td>{{item.model}}</td>
+            <td>{{item.color}}</td>
+            <td>{{item.date}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<button class="btn" mat-stroked-button [disabled]="!data.end_btn" (click)='prev()'> < prev</button>
+<button class="btn" mat-stroked-button [disabled]="!data.start_btn" (click)='next()'>next ></button>
+
+
+</mat-card>
