@@ -35,7 +35,15 @@ export class CarFormComponent implements OnInit {
     this.data.cars.push(this.car);
     this.car = new Car();
     this.number++;
-    document.getElementById('newCar').reset();
+
+    this.reset();
+    
     this.data.getCars(this.data.start ,this.data.end).subscribe(arr=> this.data.carsToshow = arr );
+  }
+
+  reset():void{
+    this.carmodel.value = '';
+    this.carcolor.value = '';
+    this.cardate.value = '';
   }
 }
