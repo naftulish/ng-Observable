@@ -30,6 +30,14 @@ export class CarDataService {
   start_btn:boolean = true;
   end_btn:boolean = false;
 
+  getHeader():Observable<string>{
+    return of(this.retString()).pipe( delay (2000))
+  }
+
+  retString():string{
+    return 'Cars Form';
+  }
+
   getCars(n:number ,n2:number):Observable<Car[]>{
     return of(this._get_Cars(n, n2)).pipe( delay (1000))
   }
